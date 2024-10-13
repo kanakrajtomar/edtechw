@@ -50,7 +50,7 @@ export default function Home() {
                     </div>
                     <div className="hero-image">
                         <img
-                            src="/src\assets\4588-removebg-preview.png?height=300&width=400"
+                            src="/4588-removebg-preview.png?height=300&width=400"
                             width="400"
                             height="300"
                             alt="Student learning online"
