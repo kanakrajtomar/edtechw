@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.courses-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.course-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background-color: #1e0b4b;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+}
+
+.course-card.it-course {
+    background-color: #ff6600;
+}
+
+.course-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.course-lessons {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.course-card h3 {
+    margin: 0 0 10px 0;
+}
+
+.course-card p {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+.course-arrow {
+    align-self: flex-end;
+    font-size: 24px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 8px 12px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination button.active {
+    background-color: #ff6600;
+    color: #fff;
+    border-color: #ff6600;
+}
+
+.prev-page,
+.next-page {
+    font-weight: bold;
+}
+
+/* Responsive for tablets and smaller devices */
+@media (max-width: 768px) {
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .course-card {
+        min-width: auto;
+        padding: 15px;
+    }
+
+    .course-card h3 {
+        font-size: 18px;
+    }
+
+    .course-card p {
+        font-size: 12px;
+    }
+
+    .pagination button {
+        padding: 6px 10px;
+    }
+}
+
+/* Responsive for small mobile devices */
+@media (max-width: 480px) {
+    .courses-page {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .course-card {
+        padding: 10px;
+    }
+
+    .course-card h3 {
+        font-size: 16px;
+    }
+
+    .course-card p {
+        font-size: 12px;
+    }
+
+    .course-icon {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .course-lessons {
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+
+    .pagination button {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+}
