@@ -209,7 +209,7 @@ export default function Home() {
                 </div>
                 <div className="footer-image">
                     <img
-                        src="/src\assets\11453335-removebg-preview.png?height=100&width=200"
+                        src="/assets\11453335-removebg-preview.png?height=100&width=200"
                         height="100"
                         width="200"
                         alt="FAQ illustration"
